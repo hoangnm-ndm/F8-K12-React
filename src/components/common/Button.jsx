@@ -1,13 +1,16 @@
 import React from "react";
 import "./Button.css";
 
-const Button = (props) => {
-	console.log(props);
-	const variant = props.variant ? `btn-${props.variant}` : "";
-	//btn-primary
+const Button = ({ variant, size, onClick, children }) => {
+	const _variant = variant ? `btn-${variant}` : "";
 
-	const size = props.size ? `btn-${props.size}` : "";
-	return <button className={`btn ${variant} ${size}`}>{props.children}</button>;
+	const _size = size ? `btn-${size}` : "";
+
+	return (
+		<button onClick={onClick} className={`btn ${_variant} ${_size}`}>
+			{children}
+		</button>
+	);
 };
 
 export default Button;
