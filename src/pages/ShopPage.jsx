@@ -6,6 +6,8 @@ const data = [
 	{ id: 1, title: "Tieu de 3", image: "https://picsum.photos/200/300" },
 ];
 
+// Xây dựng slideshow từ data cho trước.
+
 const ShopPage = () => {
 	const [count, setCount] = useState(0);
 
@@ -32,10 +34,17 @@ export default ShopPage;
 // 		state = newState;
 // 	}
 
-// 	// React re-render component chứa state bị thay đổi
+// React re-render component chứa state bị thay đổi
 // 	return [state, setState];
 // }
 
 // const [products, setProducts] = useState([]);
 
 // function useEffect(callback, denpendencies) {}
+
+/**
+ * Tìm hiểu trước:
+ * clearup function
+ * life cycle
+ *
+ */
